@@ -3,7 +3,11 @@ package seleniumInterveiwQuestions;
 public class LunchBrowser {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		WebDriverManager.chromiumdriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://demo.guru99.com/test/delete_customer.php");
 
 	}
 
